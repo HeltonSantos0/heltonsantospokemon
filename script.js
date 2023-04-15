@@ -1,9 +1,9 @@
 /*  var btnstart = document.querySelector("#btnstart")
-     var span = document.querySelector("span")
+     var span = document.querySelector("pontuação")
      var interval=
      */
 var interval 
-var span = document.querySelector("span")
+var span = document.querySelector(".span")
 
 function clicar(){
      var char = window.document.querySelector('.char')
