@@ -1,6 +1,15 @@
+/*  var btnstart = document.querySelector("#btnstart")
+     var span = document.querySelector("span")
+     var interval=
+     */
+var interval 
+var span = document.querySelector("span")
+
 function clicar(){
      var char = window.document.querySelector('.char')
      var pipe = window.document.querySelector('.pipe1')
+         
+         
      char.style.animation = ""; setTimeout(() => char.style.animation = "fly .8s", 100);}   
      const  loop = setInterval(()=>{
      
@@ -9,22 +18,25 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft;
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-     if (!charPosition < 50 && !pipePosition >= 450) {
+     if (!charPosition < 30 && !pipePosition >= 450) {
      pipe.style.animation = 'pipe1-animation 1.7s infinite linear; '
      pipe.style.left =`${pipePosition}px`
      }else if (charPosition < 30 && pipePosition >= 450) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('#GameOver')
-      
       pipe.style.animation = 'none'
       rai.style.animation = 'rai-kua 4s linear'
       rai.style.display = 'block'
       GameOver.style.animation = 'Game-Over 4s linear'
-      GameOver.style.display = 'block'
-  
+      GameOver.style.display = 'block'  
+      var span = document.querySelector("span")
+      var value = parseFloat(span.innerText)
+      clearInterval(interval)
+      
  }
 } ,10)
-     
+
+
 function voltar(){
      const blas = window.document.querySelector('.pipe1')
      const rais = window.document.querySelector("#rai")
@@ -34,4 +46,36 @@ function voltar(){
      rais.style.display = 'none'
      GO.style.animation = 'none'
      GO.style.display = 'none'
+     
+     var btnstart = document.querySelector("#btnstart")     
+     
+     btnstart = true     
+     var value = parseFloat(span.innerText)
+     
+     interval = setInterval(() => {
+          value += 0.1
+          
+          span.innerText = value.toFixed(1)
+     }, 100)
+}     
+
+function zerar() {
+     clearInterval(interval)
+     span.innerText = "0.0"
+} 
+ /* 
+function clica(){
+     var btnstart = document.querySelector("#btnstart")
+     var span = document.querySelector("span")
+     var interval=
+     btnstart.disabled = true
+     var value = parseFloat(span.innerText)
+     
+     interval= setInterval(() => {
+          value += 0.1
+          
+          span.innerText = value.toFixed(1)
+     }, 100)
 }
+ 
+ */
