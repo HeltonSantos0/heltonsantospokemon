@@ -15,14 +15,15 @@
      <header>
           
      <img  id="l" src="ball.png" alt="">
-     </div>
           <h1 id="logo">Pokemon</h1>
           <div id="pkk">
                <img  id="l" src="ball.png" alt="">
+               
      </div>
      </header>
      <main>
      <div onclick="clicar()" class="game-board ">
+          
           <img id="nu" src="nuvem.png">
           <img  id="pedra"src="pedra.png" alt=""></img>
           <img id="rai"src="rai.png">
@@ -37,11 +38,14 @@
           <img  class="lg" src="miniblas.png" alt="">
           <img  class="lg" src="bomba.png" alt=""></img>
           <img  class="lg" src="minichar.png" alt=""></img>
+          <span class="pontuacao">0.0</span>
      </div>
      <footer>&copy; Criador Helton Santos</footer>
      <div id="controls">
-     <input class="up"onclick="voltar()"type="button" value="Iniciar">
-     <input  onclick="clicar()" class="up"type="button" value="Pular">
+     <input id="btnstart"class="up" onmousedown="zerar()"onclick="voltar()"type="button" value="Iniciar">
+     <input onclick="clicar()" class="up"type="button" value="Pular">
+     
+       
      </div>
      </main>
      <footer id="final">
