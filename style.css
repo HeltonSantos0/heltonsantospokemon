@@ -19,6 +19,7 @@ header{
 main{
      background-color: #ff4055;
      padding-bottom: 600px;
+     position: relative;
 }
 
 .game-board{
@@ -33,6 +34,7 @@ main{
      border-bottom-left-radius: 10px;
      border-bottom-right-radius: 10px;
      box-shadow: 5px 5px 8px #551c20;
+
 }
 footer{
      margin: auto;
@@ -73,6 +75,18 @@ footer{
      box-shadow: 2px 2px 5px #83212b;
      display: inline-block;
      border-radius: 8px;
+}
+.pontuacao{
+     position: absolute;
+     top: 2%;
+     left: 77%;
+     font-size: 35px;
+     background-color: transparent;
+     border: 3px solid black;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px black;
+     font-weight: 400;
+     
 }
 .up:active{
      background-color: #1b9f37;
