@@ -1,9 +1,9 @@
 /*  var btnstart = document.querySelector("#btnstart")
-     var span = document.querySelector("pontuação")
+     var span = document.querySelector(".pontuação")
      var interval=
      */
 var interval 
-var span = document.querySelector(".span")
+var span = document.querySelector("span")
 
 function clicar(){
      var char = window.document.querySelector('.char')
@@ -29,8 +29,6 @@ function clicar(){
       rai.style.display = 'block'
       GameOver.style.animation = 'Game-Over 4s linear'
       GameOver.style.display = 'block'  
-      var span = document.querySelector("span")
-      var value = parseFloat(span.innerText)
       clearInterval(interval)
       
  }
