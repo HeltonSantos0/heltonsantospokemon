@@ -141,7 +141,7 @@ function trocab3(){
      pipe.style.bottom = "-10%"
      bonecos2.style.display ="none"
      pipe.style.width = "25%"
-
+}
 /*  
 function clica(){
      var btnstart = document.querySelector("#btnstart")
