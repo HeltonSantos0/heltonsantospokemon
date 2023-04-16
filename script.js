@@ -5,6 +5,7 @@
 var interval 
 var span = document.querySelector("span")
 var char = window.document.querySelector('.char')
+var pipe = window.document.querySelector('.pipe1')
 
 function clicar(){
      var char = window.document.querySelector('.char')
@@ -19,10 +20,10 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft;
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-      if ( !charPosition < 30 &&  !pipePosition >= 450 ) {
+      if ( !charPosition < 30 &&  !pipePosition >= 470 ) {
      pipe.style.animation = 'pipe1-animation 1.7s infinite linear; '
      pipe.style.left =`${pipePosition}px`
-     }else if (charPosition < 20 &&  pipePosition >= 440) 
+     }else if (charPosition < 20 &&  pipePosition >= 460) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('#GameOver')
       pipe.style.animation = 'none'
@@ -63,7 +64,7 @@ function zerar() {
      span.innerText = "0.0"
 } 
 function trocar1(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "none"
      char.src = "eevee.gif"
      char.style.position = "absolute"
@@ -72,7 +73,7 @@ function trocar1(){
      char.style.right = "4%"
 }
 function trocar2(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "none"
      char.src = "pikachu.gif"
      char.style.position = "absolute"
@@ -81,7 +82,7 @@ function trocar2(){
      char.style.right = "4%"
 }
 function trocar3(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "none"
      char.src = "char.gif"
      char.style.position = "absolute"
@@ -90,7 +91,7 @@ function trocar3(){
      char.style.width = "30%"
 }
 function trocar4(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "none"
      char.src = "raro.gif"
      char.style.position = "absolute"
@@ -100,7 +101,7 @@ function trocar4(){
     
 }
 function trocar5(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "none"
      char.src = "mew2.gif"
      char.style.position = "absolute"
@@ -110,8 +111,28 @@ function trocar5(){
     
 }
 function Skin(){
-     var bonecos = document.querySelector("#bonecos")
+     var bonecos = document.querySelector(".bonecos")
      bonecos.style.display = "block"
+}
+function OBS(){
+     var bonecos2 =document.querySelector(".bonecos2")
+     bonecos2.style.display = "block"
+}
+function trocab1(){
+     var bonecos2 =document.querySelector(".bonecos2")
+     pipe.src = "char3.gif"
+     pipe.style.position = "absolute"
+     pipe.style.bottom = "-2%"
+     bonecos2.style.display ="none"
+     pipe.style.width = "25%"
+}
+function trocab2(){
+     var bonecos2 =document.querySelector(".bonecos2")
+     pipe.src = "raro2.gif"
+     pipe.style.position = "absolute"
+     pipe.style.bottom = "0%"
+     bonecos2.style.display ="none"
+     pipe.style.width = "20%"
 }
 /*  
 function clica(){
@@ -129,9 +150,10 @@ function clica(){
 }
  
  
-width: 30%;
+pipe1{
      position: absolute;
-     bottom: 0px;
-     right: 0;
-     animation: none;
+     bottom: -10%;    
+     width: 25%;  
+     right: 120px;     
+     animation:
  */
