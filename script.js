@@ -163,5 +163,5 @@ pipe1{
      bottom: -10%;    
      width: 25%;  
      right: 120px;     
-     animation:
+     animation
  */
