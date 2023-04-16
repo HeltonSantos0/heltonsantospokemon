@@ -20,10 +20,10 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft;
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-      if ( !charPosition < 30 &&  !pipePosition >= 470 ) {
+      if ( !charPosition < 30 &&  !pipePosition >= 450 ) {
      pipe.style.animation = 'pipe1-animation 1.7s infinite linear; '
      pipe.style.left =`${pipePosition}px`
-     }else if (charPosition < 20 &&  pipePosition >= 460) 
+     }else if (charPosition < 20 &&  pipePosition >= 440) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('#GameOver')
       pipe.style.animation = 'none'
