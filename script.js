@@ -20,10 +20,10 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft;
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-      if ( !charPosition < 30 &&  !pipePosition >= 450 ) {
+      if ( !charPosition < 30 &&  !pipePosition >= 470 ) {
      pipe.style.animation = 'pipe1-animation 1.7s infinite linear; '
      pipe.style.left =`${pipePosition}px`
-     }else if (charPosition < 20 &&  pipePosition >= 440) 
+     }else if (charPosition < 20 &&  pipePosition >= 460) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('#GameOver')
       pipe.style.animation = 'none'
@@ -134,6 +134,14 @@ function trocab2(){
      bonecos2.style.display ="none"
      pipe.style.width = "20%"
 }
+function trocab3(){
+     var bonecos2 =document.querySelector(".bonecos2")
+     pipe.src = "blas.gif"
+     pipe.style.position = "absolute"
+     pipe.style.bottom = "-10%"
+     bonecos2.style.display ="none"
+     pipe.style.width = "25%"
+
 /*  
 function clica(){
      var btnstart = document.querySelector("#btnstart")
