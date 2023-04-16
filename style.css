@@ -61,9 +61,10 @@ footer{
 .atencao{
      padding-bottom: 50px;
 }
-#controls{  
-     width: 42%;
+#controls{
+     width: 53%;
      margin: auto;
+     align-items: center;
 }
 #skin{
      margin-top: 50px;
@@ -75,7 +76,7 @@ footer{
      height: 50px;
      border-radius: 10px;
 }
-#bonecos{
+.bonecos{
      border: 3px solid black;
      width: 100%;
      margin: auto;
@@ -84,25 +85,40 @@ footer{
      box-shadow: 3px 3px 6px #00000098;
      display: none;
 }
+.bonecos2{
+     border: 3px solid black;
+     width: 100%;
+     margin: auto;
+     background-color: #868686;
+     border-radius: 8px;
+     box-shadow: 3px 3px 6px #00000098;
+     display: none;
+    
+}
 .escolha{
-     width: 18%;
+     width: 20%;
      display: inline-block;
      margin: auto;
      border: 3px;
 }
+.escolha2{
+     width: 20%;
+}
+#raro2{
+     width: 20%;
+}
 #mew2{
-     width: 18%;
+     width: 17%;
 }
 .up{
-     display: block;
-     margin: auto;
      width: 120px;
      height: 70px;
      font-size: 2em;
      background-color: greenyellow;
      box-shadow: 2px 2px 5px #83212b;
-     display: inline-block;
      border-radius: 8px;
+     align-items: center;
+
 }
 .pontuacao{
      position: absolute;
