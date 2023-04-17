@@ -23,8 +23,9 @@ main{
 }
 
 .game-board{
-     width: 80%;
-     height: 500px;
+     width: 90%;
+     height: 1px;
+     padding: 25%;
      border: 3px solid black;
      margin: auto;
      position: relative;
@@ -69,6 +70,15 @@ footer{
 #skin{
      margin-top: 50px;
 }
+#alinhar{
+     background-color: #b20025;
+     border: 3px solid black;
+     display: inline-block;
+     width: 17%;
+     height: 1px;
+     padding-bottom: 20%;
+     margin-left: 2%;
+}
 .skin{
      display: block;
      margin: auto;
@@ -77,38 +87,43 @@ footer{
      border-radius: 10px;
 }
 .bonecos{
-     border: 3px solid black;
+     border: 3px solid transparent;
      width: 100%;
      margin: auto;
-     background-color: #868686;
+     background-color: transparent;
      border-radius: 8px;
      box-shadow: 3px 3px 6px #00000098;
      display: none;
 }
 .bonecos2{
-     border: 3px solid black;
      width: 100%;
      margin: auto;
-     background-color: #868686;
+     margin-top: 3%;
      border-radius: 8px;
      box-shadow: 3px 3px 6px #00000098;
      display: none;
     
 }
 .escolha{
-     width: 20%;
+     width: 100%;
      display: inline-block;
      margin: auto;
      border: 3px;
+     display: block;
+     
+     
 }
 .escolha2{
-     width: 20%;
-}
-#raro2{
-     width: 18%;
+     width: 100%;
+     display: inline-block;
+     margin: auto;
+     border: 3px;
+     display: block;
+     
+
 }
 #mew2{
-     width: 17%;
+     width: 100%;
 }
 .up{
      width: 23%;
@@ -137,12 +152,15 @@ footer{
 }
 .grama1{
      position: absolute;
-     top: 40%;
+     width: 70%;
+     top: 27%;
+     left: 0%;
      
 }
 .grama2{
      position: absolute;
-     top: 40%;
+     width: 70%;
+     top: 27%;
      left: 40%;
 }
 #rai{
@@ -157,28 +175,30 @@ footer{
 }
 #mew{
      position: absolute;
+     top: 0%;
      left: 47%;
      width: 40%;
      animation: mew-A 15s infinite linear;
 }
 #pedra{
+     width: 40%;
      animation: pedra 3s infinite linear;
      position: absolute;
      bottom: 0%;
 }
 .pipe1{
+     width: 15%;
      position: absolute;
-     bottom: -10%;    
-     width: 25%;  
-     right: 120px;     
+     bottom: 0%;    
+     left: 10%;     
      animation: none; 
 }
 
 .char{
      width: 30%;
      position: absolute;
-     bottom: 0px;
-     right: 0;
+     bottom: 0%;
+     right: 0%;
      animation: none;
 
 }
@@ -188,7 +208,7 @@ footer{
    
 }
 #nu{
-     width: 350px;
+     width: 30%;
      position: absolute;
      top: 0%;
      animation:nu-vem 15s infinite linear;
@@ -209,13 +229,13 @@ footer{
      text-shadow: 5px 5px 8px #85784e; 
          
 }
-#GameOver{
+.GameOver{
      font-family: 'pokemon';
      text-shadow: none;
      position: absolute;
      left: 32%;
      top: 33%;
-     font-size: 4em;
+     font-size: 70px;
      color: #252525;
      animation: none;
      display: none;
@@ -229,13 +249,24 @@ footer{
      display: inline-block;
      margin: auto;
 }
+#lugia{
+     position: absolute;
+     animation: lugiaa 20s infinite linear;
+     width: 15%;
+}
+#homem{
+     position: absolute;
+     bottom: -2%;
+     width: 13%;
+     animation: homem 10s infinite linear;
+}
 
 @keyframes pipe-animation{
 from{
      left:-30%;
 }
 to{
-     left:87%;
+     left:100%;
 }
 }
 @keyframes fly {
@@ -293,6 +324,22 @@ to{
 @keyframes pedra{
 from{
      left: -400px;
+}
+to{
+     left: 100%;
+}
+}
+@keyframes lugiaa{
+from{
+     left: -40%;
+}
+to{
+     left: 100%;
+}
+}
+@keyframes homem{
+from{
+     left: -400%;
 }
 to{
      left: 100%;
