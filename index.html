@@ -25,14 +25,17 @@
      <div onclick="clicar()" class="game-board ">
           
           <img id="nu" src="nuvem.png">
-          <img  id="pedra"src="pedra.png" alt=""></img>
-          <img id="rai"src="rai.png">
           <img id="mew"src="mew.gif" alt=""></img>
+          <img id="lugia"src="raro3.gif" alt=""></img>
+          <img  id="pedra"src="pedra.png" alt=""></img>
+          <img id="homem"src="homem.gif" alt=""></img>
           
           <img src="blas.gif" class="pipe1">
           <img src="char.gif" class="char">
           <img  class="grama1"src="grama.png" alt=""></img>      <img  class="grama2"src="grama.png" alt=""></img>
-          <h1 id="GameOver">Game Over</h1>
+          <img id="rai"src="rai.png">
+          <h1 class="GameOver">Game Over</h1>
+          
      </div>
      <div id="pk">
           <img  class="lg" src="miniblas.png" alt="">
@@ -43,22 +46,41 @@
      <footer>&copy; Criador Helton Santos</footer>
      <div id="controls">
         
-     <input id="btnstart"class="up" onmousedown="zerar()"onclick="voltar()"type="button" value="Iniciar">
-     <input onclick="OBS()" type="button" class="up"value="OBS">
+       <input id="btnstart"class="up" onmousedown="zerar()"onclick="voltar()"type="button" value="Iniciar">
+       <input onclick="OBS()" type="button" class="up"value="OBS">
        <input onclick="Skin()" type="button" class="up"value="SKIN">
        <input onclick="clicar()" class="up"type="button" value="Pular">
      </div>
      <div class="bonecos">
+       <div id="alinhar">
        <img onclick="trocar1()" class="escolha"src="eevee.gif" alt=""></img>
+       </div>
+       <div id="alinhar">
        <img  onclick="trocar2()" class="escolha"src="pikachu.gif" alt=""></img>
+       </div>
+       <div id="alinhar">
        <img  onclick="trocar3()"class="escolha" src="char.gif" alt=""></img>
+       </div>
+       <div id="alinhar">
        <img  onclick="trocar4()" class="escolha"src="raro.gif" alt=""></img>
+       </div>
+       <div id="alinhar">
        <img id="mew2"class="escolha"onclick="trocar5()"src="mew2.gif" alt=""></img>
+       </div>
      </div>
      <div class="bonecos2">
-        <img class="escolha2"onclick="trocab1()"src="char3.gif" alt=""></img>
-        <img class="escolha2" id="raro2"onclick="trocab2()"src="raro2.gif" alt=""></img>
-        <img onclick="trocab3()" src="blas.gif" alt=""></img>
+        <div id="alinhar">
+        <img class="escolha2"onclick="trocab2()"src="raro2.gif" alt=""></img>
+        </div>
+        <div id="alinhar">
+        <img class="escolha2"onclick="trocab3()" src="blas.gif" alt=""></img>
+        </div>
+        <div id="alinhar">
+        <img onclick="trocab4()"class="escolha2"src="gordo.gif" alt=""></img>
+        </div>
+           <div id="alinhar">
+      <img src="mewtwo.gif"class="escolha2" onclick="trocab5()" alt=""></img>
+        </div>
      </div>
      </main>
      <footer id="final">
