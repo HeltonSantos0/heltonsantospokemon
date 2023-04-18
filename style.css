@@ -159,6 +159,7 @@ footer{
      background-color: #c1d2d2;
      color: black;
      border: 3px solid black;
+     box-shadow: 3px 3px 5px #8f001d;
 }
 #EnviarNome{
      display: block;
@@ -169,6 +170,7 @@ footer{
      background-color: #ffffff;
      border: 3px solid black;
      border-radius: 10px;
+     box-shadow: 3px 3px 5px #8f001d;
 }
 #EnviarNome:active{
      background-color: #a1a1a1;
@@ -178,12 +180,14 @@ footer{
      font-size: 100%;
      font-weight: 400;
      margin-right: 10px;
+     font-style: italic;
 }
 .pontuacao{
      position: relative;
-     font-size: 200%;
+     font-size: 170%;
      font-weight: 400;
      margin-right: 10px;
+     font-style: italic;
  
      
 }
@@ -192,6 +196,8 @@ footer{
      position: relative;
      font-weight: 400;
      margin-right: 10px;
+     font-weight: 400;
+     font-style: italic;
 }
 .up:active{
      background-color: #7f7f7f;
