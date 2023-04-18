@@ -10,15 +10,15 @@ body{
 
 }
 header{
-       font-family: 'pokemon';
-       font-size: 2em;
-       text-align: center;
-       background-color:  #ffe795;
-       border-bottom: 3px solid  black;
+      font-family: 'pokemon';
+      font-size: 2em;
+      text-align: center;
+      background-color:  #ffe795;
+      border-bottom: 3px solid  black;
 }
 main{
      background-color: #ff4055;
-     padding-bottom: 600px;
+     padding-bottom: 500px;
      position: relative;
 }
 
@@ -30,7 +30,7 @@ main{
      margin: auto;
      position: relative;
      overflow: hidden;
-     background-image: linear-gradient(to top, #40ff63, white, #15b6ff);
+     background-image: linear-gradient(to top, #40ff63, white 20%, #15b6ff);
      border-bottom: 20px solid green;
      border-bottom-left-radius: 10px;
      border-bottom-right-radius: 10px;
@@ -71,7 +71,7 @@ footer{
      margin-top: 50px;
 }
 #alinhar{
-     background-color: #b20025;
+     background-color: #991a39;
      border: 3px solid black;
      display: inline-block;
      width: 17%;
@@ -127,28 +127,74 @@ footer{
 }
 .up{
      width: 23%;
-     height: 70px;
-     font-size: 2em;
-     background-color: greenyellow;
+     padding: 4%;
+     font-size: 100%;
+     background-color: #ffffff;
      box-shadow: 2px 2px 5px #83212b;
      border-radius: 8px;
      align-items: center;
 
 }
-.pontuacao{
+#tabela{
      position: absolute;
-     top: 2%;
-     left: 77%;
-     font-size: 35px;
-     background-color: transparent;
-     border: 3px solid black;
-     border-radius: 10px;
-     box-shadow: 2px 2px 5px black;
-     font-weight: 400;
+     top: 5%;
+     left: 75%;
+     
      
 }
+#espacoNome{
+     margin: auto;
+     margin-top: 20%;
+     width: 50%;
+     
+     
+}
+#EscreverNome{
+     display: block;
+     margin: auto;
+     width: 100%;
+     padding: 2.5%;
+     font-size: 100%;
+     border-radius: 20px;
+     background-color: #c1d2d2;
+     color: black;
+     border: 3px solid black;
+}
+#EnviarNome{
+     display: block;
+     margin: auto;
+     width: 25%;
+     padding: 3%;
+     margin-top: 10px;
+     background-color: #ffffff;
+     border: 3px solid black;
+     border-radius: 10px;
+}
+#EnviarNome:active{
+     background-color: #a1a1a1;
+}
+.po{
+     display: inline-block;
+     font-size: 100%;
+     font-weight: 400;
+     margin-right: 10px;
+}
+.pontuacao{
+     position: relative;
+     font-size: 200%;
+     font-weight: 400;
+     margin-right: 10px;
+ 
+     
+}
+.pontuacao2{
+     font-size: 150%;
+     position: relative;
+     font-weight: 400;
+     margin-right: 10px;
+}
 .up:active{
-     background-color: #1b9f37;
+     background-color: #7f7f7f;
 }
 .grama1{
      position: absolute;
