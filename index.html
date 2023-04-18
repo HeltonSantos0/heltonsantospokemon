@@ -10,6 +10,7 @@
                src: url("Pokemon Hollow.ttf") format('truetype');
           }
      </style>
+     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="folha de estilo">
 </head> 
 <body>
      <header>
@@ -35,20 +36,34 @@
           <img  class="grama1"src="grama.png" alt=""></img>      <img  class="grama2"src="grama.png" alt=""></img>
           <img id="rai"src="rai.png">
           <h1 class="GameOver">Game Over</h1>
-          
+          <div id="tabela">
+           <h1 class="po">
+                P:<span class="pontuacao">0.0</span>
+                </h1>
+          <br>
+          <h1 class="po">
+               H:<span class="pontuacao1">0.0</span>
+               </h1>
+                <h1 class="po">
+               <span id="nome" class="pontuacao2"></span>
+               </h1>
+                
+          </div>
      </div>
      <div id="pk">
           <img  class="lg" src="miniblas.png" alt="">
           <img  class="lg" src="bomba.png" alt=""></img>
           <img  class="lg" src="minichar.png" alt=""></img>
-          <span class="pontuacao">0.0</span>
+          
      </div>
+     <!-- top: 2%;
+     left: 77%; -->
      <footer>&copy; Criador Helton Santos</footer>
      <div id="controls">
         
        <input id="btnstart"class="up" onmousedown="zerar()"onclick="voltar()"type="button" value="Iniciar">
-       <input onclick="OBS()" type="button" class="up"value="OBS">
-       <input onclick="Skin()" type="button" class="up"value="SKIN">
+       <input onclick="OBS()" type="button" class="up"value="Obs">
+       <input onclick="Skin()" type="button" class="up"value="Skin">
        <input onclick="clicar()" class="up"type="button" value="Pular">
      </div>
      <div class="bonecos">
@@ -82,6 +97,10 @@
       <img src="mewtwo.gif"class="escolha2" onclick="trocab5()" alt=""></img>
         </div>
      </div>
+     <div id="espacoNome"><input id="EscreverNome"type="text" onclick="nada()" onblur="foco()" value="Digite seu Nome" >
+     <input class="EscreverN"id="EnviarNome"type="button" onclick="Enviarnome()"value="Enviar">
+     </div>
+     
      </main>
      <footer id="final">
           <h1 class="atencao">Atenção</h1>
@@ -90,6 +109,8 @@
                <p>Criador do site, <strong>Helton santos.</strong> Helton criou e desenvolveu o jogo.</p>
           </div>
      </footer>
-     <script src="script.js"></script>
+     
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
