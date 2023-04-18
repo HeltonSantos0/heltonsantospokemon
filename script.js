@@ -2,10 +2,26 @@
      var span = document.querySelector(".pontuação")
      var interval=
      */
+     
 var interval 
-var span = document.querySelector("span")
+var span = document.querySelector(".pontuacao")
 var char = window.document.querySelector('.char')
 var pipe = window.document.querySelector('.pipe1')
+var historico1= document.querySelector(".pontuacao1")
+var historico2= document.querySelector(".pontuacao2")
+var historico3 = document.querySelector(".pontuacao3")
+var EnviarNome= document.querySelector("#EnviarNome")
+var EscreverNome = document.querySelector("#EscreverNome")
+var EscreverN = document.querySelector(".EscreverN")
+ var value
+ 
+ 
+
+
+/* confirm(`${nome} Deseja ler o tutorial`)
+ if (confirm() == true) {
+     alert("")
+} */
 
 function clicar(){
      var char = window.document.querySelector('.char')
@@ -20,7 +36,7 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-     if (charPosition < 50 && pipePosition >= 510 && pipePosition <= 760) 
+     if (charPosition < 50 && pipePosition >= 530 && pipePosition <= 710) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('.GameOver')
       pipe.style.position = "absolute"
@@ -33,6 +49,12 @@ function clicar(){
       GameOver.style.display = 'block'  
       clearInterval(interval)
       
+      var h2 = parseFloat(value.toFixed(1))
+      historico1.innerHTML = h2
+      
+      
+      
+
  }
 } ,10)
 
@@ -51,13 +73,15 @@ function voltar(){
      var btnstart = document.querySelector("#btnstart")     
      
      btnstart = true     
-     var value = parseFloat(span.innerText)
+     value = parseFloat(span.innerText)
      
      interval = setInterval(() => {
           value += 0.1
           
           span.innerText = value.toFixed(1)
      }, 100)
+     
+     
 }     
 
 function zerar() {
@@ -69,7 +93,7 @@ function trocar1(){
      bonecos.style.display = "none"
      char.src = "eevee.gif"
      char.style.position = "absolute"
-     char.style.bottom = "-8%"
+     char.style.bottom = "0%"
      char.style.width = "25%"
      char.style.right = "4%"
 }
@@ -151,30 +175,27 @@ function trocab5(){
      bonecos2.style.display ="none"
      pipe.style.width = "20%"
 }
-/*  
-function clica(){
-     var btnstart = document.querySelector("#btnstart")
-     var span = document.querySelector("span")
-     var interval=
-     btnstart.disabled = true
-     var value = parseFloat(span.innerText)
-     
-     interval= setInterval(() => {
-          value += 0.1
+function Enviarnome(){
+          var nome = EscreverNome.value
+          historico2.innerText = nome
+          EscreverNome.value = "Digite seu Nome"
+          Swal.fire( 'sucesso!', `Seja bem-vindo ${nome}!`, 'success' )
+     if (nome == "Digite seu Nome") {
+          Swal.fire({ icon: 'error', title: 'Oops...', text: 'Digite um nome por favor!' })
+          historico2.innerText = ""
+     }else if (nome == "bianka" || nome == "Bianka" ) {
+          historico2.innerText = "Amor da minha vida"
+          Swal.fire({ title: 'Bianka!', text: 'Amor da minha vida', imageUrl: 'IMG-20221128-WA0041.jpg', imageWidth: 400, imageHeight: 300, imageAlt: 'Custom image', })
           
-          span.innerText = value.toFixed(1)
-     }, 100)
+     }
+     
 }
- 
- pipe.offsetLeft
-pipe1{
-     position: absolute;
-     bottom: -10%;    
-     width: 25%;  
-     right: 120px;     
-     animation:
- */
-/*   if ( !charPosition < 30 &&  !pipePosition >= 460 ) {
-     pipe.style.animation = 'pipe1-animation 1.7s infinite linear; '
-     pipe.style.left =`${pipePosition}px`
-     }else  */
+function nada(){
+     EscreverNome.value = ""
+}
+function foco(){
+     if (EscreverNome.value == "") {
+          EscreverNome.value = "Digite seu Nome"
+     }
+     
+}
