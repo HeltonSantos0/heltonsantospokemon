@@ -36,7 +36,7 @@ function clicar(){
    
      const pipePosition = pipe.offsetLeft
      const charPosition = +window.getComputedStyle(char).bottom.replace('px', '')
-     if (charPosition < 50 && pipePosition >= 530 && pipePosition <= 710) 
+     if (charPosition < 50 && pipePosition >= 550 && pipePosition <= 710) 
       {    var rai = window.document.querySelector('#rai')
       var GameOver = window.document.querySelector('.GameOver')
       pipe.style.position = "absolute"
