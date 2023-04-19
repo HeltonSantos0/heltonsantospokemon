@@ -139,6 +139,8 @@ footer{
      position: absolute;
      top: 5%;
      left: 75%;
+     border: 1px solid black;
+     border-radius: 5px;
      
      
 }
@@ -181,6 +183,7 @@ footer{
      font-weight: 400;
      margin-right: 10px;
      font-style: italic;
+     margin-left: 5px;
 }
 .pontuacao{
      position: relative;
@@ -322,23 +325,25 @@ to{
 }
 }
 @keyframes fly {
-     0%{
-          bottom: 0;
+0%{
+     bottom: 0;
+}
+/*  
+40%{
+     bottom: 150px;
      }
-  /*  40%{
-          bottom: 150px;
-     }
-    */50%{
-          bottom: 170px;/ 
-     }
-     60%{
-          bottom: 150px;
-     }
+*/
+50%{
+     bottom: 170px;/ 
+}
+60%{
+     bottom: 150px;
+}
      
      
-     0%{
-          bottom: 0;
-     }
+0%{
+     bottom: 0;
+}
 }
 @keyframes nu-vem{
 from{
@@ -366,12 +371,12 @@ to{
 }
 }
 @keyframes mew-A {
-     from{
-          left: 10%;
-     }
-     to{
-          left: 57%;
-     }
+from{
+     left: 10%;
+}
+to{
+     left: 57%;
+}
 }
 @keyframes pedra{
 from{
